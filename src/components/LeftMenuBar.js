@@ -1,4 +1,6 @@
-export function LeftMenuBar() {
+export function LeftMenuBar(props) {
+  const switchPage = props.switchPage;
+
   return (
     <div
       style={{
@@ -6,11 +8,11 @@ export function LeftMenuBar() {
         borderWidth: 2,
         borderColor: 'red',
         borderStyle: 'solid',
-        display: 'flex',
         height: '500px',
       }}
     >
-      Left Menu Bar
+      <button onClick={() => switchPage("main")}>main</button>
+      <button onClick={() => switchPage("details")}>details</button>
     </div>
   );
 }
