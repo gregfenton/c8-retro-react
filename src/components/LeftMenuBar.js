@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
+
 export function LeftMenuBar(props) {
-  const switchPage = props.switchPage;
 
   return (
     <div
@@ -11,8 +12,8 @@ export function LeftMenuBar(props) {
         height: '500px',
       }}
     >
-      <button onClick={() => switchPage("main")}>main</button>
-      <button onClick={() => switchPage("details")}>details</button>
+      <Link to='/'>main</Link><br/>
+      <Link to='details'>details</Link>
     </div>
   );
 }
