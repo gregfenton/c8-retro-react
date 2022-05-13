@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export function LeftMenuBar(props) {
-
   return (
     <div
       style={{
@@ -9,10 +8,10 @@ export function LeftMenuBar(props) {
         borderWidth: 2,
         borderColor: 'red',
         borderStyle: 'solid',
-        height: '500px',
       }}
     >
-      <Link to='/'>main</Link><br/>
+      <Link to='/'>main</Link>
+      <br />
       <Link to='details'>details</Link>
     </div>
   );
