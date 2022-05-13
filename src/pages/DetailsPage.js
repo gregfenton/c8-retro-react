@@ -6,7 +6,6 @@ export function DetailsPage() {
         borderWidth: 2,
         borderColor: 'green',
         borderStyle: 'solid',
-        width: '100%',
       }}
     >
       DETAILS!!!! Page
