@@ -1,3 +1,12 @@
+import { Route, Routes } from 'react-router-dom';
+
+function ShowMyMainNavThingy(props) {
+  return <p>MAIN</p>;
+}
+function ShowMyDetailsNavThingy(props) {
+  return <p>DETAILS!!!!</p>;
+}
+
 export function NavBar() {
   return (
     <div
@@ -10,7 +19,16 @@ export function NavBar() {
         gridColumn: '1/3',
       }}
     >
-      Navigation Bar
+      <Routes>
+        <Route path='/' element={<ShowMyMainNavThingy />} />
+        <Route path='details' element={<ShowMyDetailsNavThingy />} />
+      </Routes>
     </div>
   );
 }
+
+// When React see this:
+//   <Foo fred={3} barney={[1,2,3]} />
+//
+// it actually ends up running this:
+//    Foo({fred: 3, barney: [1,2,3]})
