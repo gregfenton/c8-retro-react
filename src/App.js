@@ -1,7 +1,6 @@
 import { NavBar } from './components/NavBar';
 import { LeftMenuBar } from './components/LeftMenuBar';
 import { MainPage } from './pages/MainPage';
-import { useState } from 'react';
 import { DetailsPage } from './pages/DetailsPage';
 import { Route, Routes } from 'react-router-dom';
 
